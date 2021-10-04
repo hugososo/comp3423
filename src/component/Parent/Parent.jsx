@@ -6,7 +6,7 @@ import GameEnd from "../GameEnd/index.js";
 import { GameProgressContext } from "../../context/appContext";
 import "./Parent.css";
 
-export const parentSocket = io(`${process.env.REACT_APP_PUBLIC_IP}`);
+export const parentSocket = io("http://15.164.241.161");
 
 function Parent(props) {
   const name = "parent";

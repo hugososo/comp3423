@@ -5,7 +5,7 @@ import { GameProgressContext, TeacherModeContext } from "../../context/appContex
 import GameEnd from "../GameEnd/index.js";
 import "./Teacher.css";
 
-export const teacherSocket = io(`${process.env.REACT_APP_PUBLIC_IP}`);
+export const teacherSocket = io("http://15.164.241.161");
 
 function Teacher(props) {
   const name = "teacher";

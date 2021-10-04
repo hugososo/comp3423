@@ -7,7 +7,7 @@ import { GameProgressContext } from "../../context/appContext";
 // import ReactCSSTransitionGroup from "react-transition-group";
 import "./Home.css";
 
-export const homeSocket = io(`${process.env.REACT_APP_PUBLIC_IP}`);
+export const homeSocket = io("http://15.164.241.161");
 
 function Home() {
   const [socketID, setSocketID] = useState("");
@@ -16,7 +16,6 @@ function Home() {
   const name = "ui";
 
   useEffect(() => {
-    console.log(process.env.REACT_APP_PUBLIC_IP);
     homeSocket.on("connect", () => {
       console.log("connect");
       setSocketID(homeSocket.id);

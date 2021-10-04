@@ -4,7 +4,7 @@ import CircleButton from "../CircleButton/CircleButton";
 import { GameProgressContext } from "../../context/appContext";
 import "./Student.css";
 
-const studentSocket = io(`${process.env.REACT_APP_PUBLIC_IP}`);
+const studentSocket = io("http://15.164.241.161");
 
 function Student(props) {
   const name = "student";
