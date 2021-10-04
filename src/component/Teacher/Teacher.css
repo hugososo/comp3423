@@ -1,0 +1,15 @@
+#parent {
+    background: linear-gradient(180deg, #FEB6B6 10.94%, #FDEB8E 100%);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.long-button-container {
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    width: 80%;
+    height:50%;
+}

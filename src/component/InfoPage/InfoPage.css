@@ -1,0 +1,59 @@
+#home {
+    background: url("../../assets/bg-1.jpg");
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info-title {
+    font-size: 5em;
+    text-align: center;
+	background: linear-gradient(to right, #feac5e, #c779d0, #4bc0c8);
+	-webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.id-field {
+    height:3.8em;
+    min-width:min(500px, calc(80% + 100px));
+    background: #FFFFFF;
+    border: 6px ridge #000000;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.id-field-after {
+    content: "";
+    position: absolute;
+    top:10%;
+    width: 5px;
+    height: 2.5em;
+    background: #000;
+    animation: shiny 1.3s ease-in 0.5s infinite;
+}
+
+.id-text {
+    margin-left: 10px;
+    font-size: 2.5em;
+}
+
+@keyframes shiny {
+    from {
+        opacity: 0;
+    }
+    25% {
+        opacity: 100;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 100;
+    }
+    to {
+        opacity: 0;
+    }
+}

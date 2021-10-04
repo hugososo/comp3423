@@ -1,0 +1,20 @@
+#student {
+    background: linear-gradient(180deg, #DEFFCA 10.94%, #20C191 65.62%, #C8DCFB 100%);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.circle-button-container {
+    display: grid;
+    grid-template-columns:repeat(3, 90px);
+    row-gap: 20px;
+    column-gap: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.confirm-btn {
+    grid-column: span 2/4;
+}

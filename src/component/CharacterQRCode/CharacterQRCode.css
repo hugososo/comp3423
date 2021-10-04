@@ -1,0 +1,16 @@
+.qr-container {
+    margin-top:25px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.qr-title {
+    font-size: 2em;
+    text-decoration: none;
+}
+
+.qr-title:first-letter {
+    text-transform: uppercase;
+}
