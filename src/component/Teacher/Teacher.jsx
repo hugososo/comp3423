@@ -4,8 +4,9 @@ import LongButton, { LongButtonLocal } from "../LongButton/LongButton";
 import { GameProgressContext, TeacherModeContext } from "../../context/appContext";
 import GameEnd from "../GameEnd/index.js";
 import "./Teacher.css";
+import { PROD } from "../../config.js"
 
-export const teacherSocket = io("http://15.164.241.161");
+export const teacherSocket = io(PROD);
 
 function Teacher(props) {
   const name = "teacher";

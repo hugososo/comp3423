@@ -6,8 +6,9 @@ import GamePage from "../GamePage/index.js";
 import { GameProgressContext } from "../../context/appContext";
 // import ReactCSSTransitionGroup from "react-transition-group";
 import "./Home.css";
+import { PROD } from "../../config.js"
 
-export const homeSocket = io("http://15.164.241.161");
+export const homeSocket = io(PROD);
 
 function Home() {
   const [socketID, setSocketID] = useState("");

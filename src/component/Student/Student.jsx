@@ -3,8 +3,9 @@ import io from "socket.io-client";
 import CircleButton from "../CircleButton/CircleButton";
 import { GameProgressContext } from "../../context/appContext";
 import "./Student.css";
+import { PROD } from "../../config.js"
 
-const studentSocket = io("http://15.164.241.161");
+const studentSocket = io(PROD);
 
 function Student(props) {
   const name = "student";

@@ -5,8 +5,9 @@ import Answering from "../Answering/index.js";
 import GameEnd from "../GameEnd/index.js";
 import { GameProgressContext } from "../../context/appContext";
 import "./Parent.css";
+import { PROD } from "../../config.js"
 
-export const parentSocket = io("http://15.164.241.161");
+export const parentSocket = io(PROD);
 
 function Parent(props) {
   const name = "parent";
