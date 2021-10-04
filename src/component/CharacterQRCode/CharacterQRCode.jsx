@@ -2,7 +2,6 @@ import React from "react";
 import QRCode from "qrcode.react"
 import { Link } from "react-router-dom";
 import "./CharacterQRCode.css";
-import { PROD } from "../../config.js";
 
 function CharacterQRCode({name,socketID,color}) {
 

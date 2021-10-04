@@ -9,6 +9,7 @@
 .qr-title {
     font-size: 2em;
     text-decoration: none;
+    outline: none;
 }
 
 .qr-title:first-letter {

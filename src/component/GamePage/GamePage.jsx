@@ -3,11 +3,10 @@ import { StudentContext, GameProgressContext } from "../../context/appContext";
 import { homeSocket } from "../Home/Home";
 import "./GamePage.css";
 import hanabi from '../../assets/sparkles-fireworks.gif';
-import wow from "../../assets/wow.mp3";
-import encourage from "../../assets/encourage.mp3";
-import sad from "../../assets/sad.mp3";
-import cheer from "../../assets/tuturuu.mp3";
-
+// import wow from "https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/wow.mp3"
+// import sad from "https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/sad.mp3";
+// import encourage from "https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/encourage.mp3";
+// import cheer from "https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/tuturuu.mp3"
 
 export function getRandomInt(min, max) {
   min = Math.ceil(min);
@@ -29,13 +28,11 @@ function GamePage() {
   const questionRef = useRef();
   const [questionCount, setQuestionCount] = useState(0);
   const [comment, setComment] = useState("");
-  const wowAudio = new Audio(wow);
-  const encourageAudio = new Audio(encourage);
-  const sadAudio = new Audio(sad);
-  const cheerAudio = new Audio(cheer);
+  const wowAudio = new Audio("https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/wow.mp3");
+  const encourageAudio = new Audio("https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/encourage.mp3");
+  const sadAudio = new Audio("https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/sad.mp3");
+  const cheerAudio = new Audio("https://vegetabucket.s3.ap-northeast-2.amazonaws.com/audio/tuturuu.mp3");
   const audio = [wowAudio, encourageAudio, cheerAudio, sadAudio]; 
-  // const answerSpaceRef = useRef(answerSpace);
-  // const scoreRef = useRef(score);
 
   useEffect(() => {
 
